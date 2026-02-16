@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mohammad Abu-Alhijaa — QA Engineer & Full-Stack Developer. Explore my portfolio, projects, and skills in software quality assurance and web development.">
+    <meta name="keywords"
+        content="Mohammad Abu-Alhijaa, QA Engineer, Full-Stack Developer, Portfolio, Software Quality Assurance, MERN Stack">
+    <meta name="author" content="Mohammad Abu-Alhijaa">
+    <title>Mohammad Abu-Alhijaa | QA Engineer & Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">M<span class="logo-dot">.</span>A</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-noise"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-name">Mohammad<br>Abu-Alhijaa</h1>
+            <div class="hero-title">
+                <span class="hero-title-static">I'm a </span>
+                <span class="hero-title-dynamic" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Detail-oriented Computer Science graduate transitioning into Software Quality Assurance
+                with hands-on full-stack development experience and a passion for building reliable software.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-ghost">
+                    View Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">ISTQB</span>
+                    <span class="stat-label">In Progress</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">01 — About</p>
+                <h2 class="section-title">A little bit<br>about me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="image.png" alt="Mohammad Abu-Alhijaa" class="profile-photo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display:none;">
+                            <span>M.A</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        I'm a motivated Computer Science graduate from <strong>Irbid National University</strong>,
+                        Jordan.
+                        I have a strong foundation in manual testing methodologies, basic automation concepts, and solid
+                        understanding of modern web technologies.
+                    </p>
+                    <p class="about-text">
+                        Currently preparing for the <strong>ISTQB Foundation Level Certification</strong>, I am
+                        passionate
+                        about quality, documentation, and continuous improvement in agile environments.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Amman, Jordan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email</span>
+                            <a href="mailto:abualhijamohamad1@gmail.com"
+                                class="detail-value detail-link">abualhijamohamad1@gmail.com</a>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone</span>
+                            <a href="tel:+962790260181" class="detail-value detail-link">+962 790260181</a>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Languages</span>
+                            <span class="detail-value">Arabic (Native) · English (Intermediate)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">02 — Skills</p>
+                <h2 class="section-title">What I<br>work with</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-number">01</div>
+                    <h3 class="skill-card-title">QA & Testing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Manual Testing</span>
+                        <span class="skill-tag">Test Cases</span>
+                        <span class="skill-tag">Bug Reporting</span>
+                        <span class="skill-tag">SDLC</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Cypress</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-number">02</div>
+                    <h3 class="skill-card-title">Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Bootstrap 5</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-number">03</div>
+                    <h3 class="skill-card-title">Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-number">04</div>
+                    <h3 class="skill-card-title">Tools & Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Java (OCA)</span>
+                        <span class="skill-tag">Agile / Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">03 — Experience</p>
+                <h2 class="section-title">Where I've<br>been</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">In Progress</span>
+                        <h3 class="timeline-title">ISTQB Foundation Level Certification</h3>
+                        <p class="timeline-subtitle">Preparing for Certification</p>
+                        <p class="timeline-text">Building a strong foundation in software testing principles, test
+                            design techniques, and quality assurance best practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">In Progress</span>
+                        <h3 class="timeline-title">QA Manual and Automation</h3>
+                        <p class="timeline-subtitle">Princess Sumaya University for Technology</p>
+                        <p class="timeline-text">Comprehensive training in both manual and automated testing
+                            methodologies, covering test planning, execution, and reporting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge badge-alt">Training</span>
+                        <h3 class="timeline-title">Full MERN Stack Course</h3>
+                        <p class="timeline-subtitle">SDK Training Center · Dec 2024 – Jun 2025</p>
+                        <p class="timeline-text">Intensive full-stack development training covering MongoDB, Express.js,
+                            React.js, and Node.js with hands-on project building.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge badge-alt">Internship</span>
+                        <h3 class="timeline-title">Full Stack Development Internship</h3>
+                        <p class="timeline-subtitle">Web 7 Company, Amman · Mar 2023 – Jun 2023</p>
+                        <ul class="timeline-list">
+                            <li>Worked on front-end and back-end projects using HTML, CSS, JavaScript</li>
+                            <li>Participated in development cycles and applied manual testing techniques</li>
+                            <li>Gained exposure to software quality practices in real-world environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">04 — Projects</p>
+                <h2 class="section-title">Selected<br>work</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fas fa-home"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Real Estate Jordan</h3>
+                            <a href="https://github.com/mohammad2001ah/realestate-jo" target="_blank" rel="noopener"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <p class="project-desc">Full-stack MERN real estate platform with property listings,
+                            authentication, favorites, admin dashboard, and approval workflows.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fas fa-vial"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">QA Automation Store</h3>
+                            <a href="https://github.com/mohammad2001ah/Qa-Automation-Store" target="_blank"
+                                rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <p class="project-desc">Simulated e-commerce app built for QA testing practice with intentional
+                            bugs and various test scenarios.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>QA Testing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fas fa-car"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Car Maintenance Center</h3>
+                            <a href="https://github.com/mohammad2001ah/Car_Maintenance_Center" target="_blank"
+                                rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <p class="project-desc">Premium automotive service website with service listings, booking
+                            system, testimonials, and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fas fa-layer-group"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Full Stack MERN Project</h3>
+                            <a href="https://github.com/mohammad2001ah/Full_stack_mern_project" target="_blank"
+                                rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <p class="project-desc">Comprehensive full-stack application showcasing end-to-end development
+                            from database design to responsive frontend.</p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">SDK Final Project</h3>
+                            <a href="https://github.com/mohammad2001ah/SDK_FP" target="_blank" rel="noopener"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <p class="project-desc">Final capstone project from SDK Training Center demonstrating full-stack
+                            proficiency with modern tools.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">05 — Education</p>
+                <h2 class="section-title">Academic<br>background</h2>
+            </div>
+            <div class="education-card reveal">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <h3 class="edu-degree">Bachelor of Computer Science</h3>
+                    <p class="edu-school">Irbid National University, Jordan</p>
+                    <p class="edu-date">Oct 2020 – Sep 2024</p>
+                    <span class="edu-grade">Very Good</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">06 — Contact</p>
+                <h2 class="section-title">Let's work<br>together</h2>
+                <p class="section-subtitle">I'm currently looking for new opportunities. Feel free to reach out!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:abualhijamohamad1@gmail.com">abualhijamohamad1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+962790260181">+962 790260181</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <p>Amman, Jordan</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/mohammad-abu-alhija-a-15580b316/" target="_blank"
+                            rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mohammad2001ah" target="_blank" rel="noopener" class="social-link"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abualhijamohamad1@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#hero" class="footer-logo">M<span class="logo-dot">.</span>A</a>
+                    <p class="footer-text">&copy; 2025 Mohammad Abu-Alhijaa</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mohammad-abu-alhija-a-15580b316/" target="_blank"
+                        rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/mohammad2001ah" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:abualhijamohamad1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
