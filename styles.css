@@ -830,6 +830,11 @@ img {
     color: var(--text-muted);
 }
 
+.projects-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
 /* ---- EDUCATION ---- */
 .education {
     background: var(--bg-alt);
