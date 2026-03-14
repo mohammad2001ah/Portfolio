@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== TYPING EFFECT ==========
     const titles = [
         'QA Engineer',
-        'Full-Stack Developer',
+        'Automation Tester',
         'Manual Tester',
-        'MERN Stack Developer',
-        'Problem Solver'
+        'Full-Stack Developer',
+        
     ];
     const typingEl = document.getElementById('typingText');
     let titleIdx = 0;
